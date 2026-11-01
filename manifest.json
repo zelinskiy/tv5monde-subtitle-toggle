@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "TV5Monde Language Toggle",
+  "version": "1.0",
+  "description": "Toggle subtitles between primary and secondary languages using 'S'",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.tv5mondeplus.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
